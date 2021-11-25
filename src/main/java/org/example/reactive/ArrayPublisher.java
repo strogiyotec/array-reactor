@@ -34,6 +34,9 @@ public final class ArrayPublisher implements Publisher<String> {
 
         private final Subscriber<? super String> subscriber;
 
+        /**
+         * Keep track of requested items.
+         */
         private int index = 0;
 
         public ArraySubscription(
